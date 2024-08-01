@@ -1029,7 +1029,8 @@ a{
 	font-weight: 500;
 }
 
-.footer__menu-link:hover, .footer__menu-link:focus, .footer__menu-link:active{
+.footer__menu-link:hover, .footer__menu-link:focus, .footer__menu-link:active,
+.header__link:hover, .header__link:focus, .header__link:active{
 	opacity: 0.75;
 }
 
