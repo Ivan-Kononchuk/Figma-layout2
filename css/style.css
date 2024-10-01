@@ -24,11 +24,6 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
-/* make sure to set some focus styles for accessibility */
-:focus {
-    outline: 0;
-}
-
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -620,7 +615,7 @@ a{
 	font-size: 35px;
 	line-height: 42px;
 	padding: 93px 100px 88px 100px;
-	transform: translateY(-100%);
+	transform: translateY(-99%);
 	background-color: white;
 }
 
@@ -1226,10 +1221,14 @@ a, .header__nav-close, .header__burger{
 
   .section-title{
   	margin-bottom: 25px;
+  	text-align: center;
   }
 
   .section-title::after{
   	width: 78px;
+  	right: 0;
+  	margin-left: auto;
+  	margin-right: auto;
   }
 
   .places__card-pic_size_lg, .laces__card-pic_size_sm{
@@ -1308,6 +1307,8 @@ a, .header__nav-close, .header__burger{
 
   .top__card{
   	max-width: 386px;
+  	margin-left: auto;
+  	margin-right: auto;
   }
 
 
