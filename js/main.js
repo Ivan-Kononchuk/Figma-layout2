@@ -28,13 +28,19 @@
 		menu.classList.remove('header__nav_active');
 	});
 
-	if (window.innerWidth <= 800) {
-		for (let i= 0; i < menuLinks.length; i++){
-			menuLinks[i].addEventListener('click', ()=> {
-				menu.classList.remove('header__nav_active');
-			});
-		}
-	};
+
+	for (let i= 0; i < menuLinks.length; i++){
+		menuLinks[i].addEventListener('click', ()=> {
+			menu.classList.remove('header__nav_active');
+		});
+	}
+
+    window.addEventListener('resize', ()=>{
+        if (window.innerWidth >= 767) {
+            menu.classList.remove('header__nav_active');
+        }
+    });
+
 }());
 
 
